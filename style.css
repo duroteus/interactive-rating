@@ -102,6 +102,7 @@ button {
 .rating-box label {
   display: flex;
   background: hsl(213, 20%, 27%);
+  color: var(--light-grey);
   width: 100%;
   height: 100%;
   border-radius: 99px;
@@ -110,11 +111,7 @@ button {
 }
 
 .rating-box label:hover {
-  background: hsl(25, 97%, 53%);
-}
-
-.rating-box label:active {
-  background: hsl(216, 12%, 54%);
+  background: var(--orange);
 }
 
 .rating-box input {
@@ -122,7 +119,9 @@ button {
 }
 
 .rating-box input:checked + label {
-  background: hsl(216, 12%, 54%);
+  background: var(--medium-grey);
+  color: var(--white);
+  font-weight: bold;
 }
 
 .form-box button,
